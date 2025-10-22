@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,31 +9,107 @@
 <body>
   <header>
     <h1>Proto-ML Toolbox</h1>
-    <p>Eine Sammlung nützlicher Tools für Machine Learning Projekte 🧠⚡</p>
+    <p>An IDE to support prototyping of machine learning solutions</p>
   </header>
 
   <main>
-    <section class="tool-grid">
+    <section class="intro">
+      <p>
+        <strong>Proto-ML</strong> provides tool support for the <strong>analysis, implementation, and knowledge management</strong> phases of ML solution prototyping.
+        Most extensions have been implemented as <em>JupyterLab</em> proof-of-concept extensions and evaluated in initial studies.
+        Some extensions are still <strong>under development</strong> or <strong>in design</strong>.
+      </p>
+    </section>
+
+    <!-- Analysis Bundle -->
+    <section class="bundle">
+      <h2>📊 Bundle: Analysis</h2>
+      <p>Tools that help stakeholders understand the solution strategy implemented in an ML prototype.</p>
+
       <div class="tool-card">
-        <h2>📦 Tool 1</h2>
-        <p>Kurzbeschreibung des Tools.</p>
-        <a href="https://github.com/DEIN-USERNAME/tool1" target="_blank">Zum Repo</a>
+        <h3>Explainer</h3>
+        <p>
+          Provides a high-level overview of the activity flow, data flow, and basic explanations.
+          Visualizes the notebook as a semantic activity-flow graph, using LLM-generated activity labels and descriptions.
+        </p>
+        <p class="status implemented">Status: Implemented ✅</p>
+        <a href="https://github.com/YOUR-USERNAME/explainer" target="_blank">View Repository</a>
       </div>
+
       <div class="tool-card">
-        <h2>🔧 Tool 2</h2>
-        <p>Kurzbeschreibung des Tools.</p>
-        <a href="https://github.com/DEIN-USERNAME/tool2" target="_blank">Zum Repo</a>
+        <h3>Card Generator</h3>
+        <p>
+          Creates <em>ML prototype cards</em> inspired by model cards, documenting essential information for technical and non-technical stakeholders.
+          Automatically extracts relevant metadata from notebooks.
+        </p>
+        <p class="status development">Status: In design 🧭</p>
       </div>
+    </section>
+
+    <!-- Implementation Bundle -->
+    <section class="bundle">
+      <h2>🧰 Bundle: Implementation</h2>
+      <p>Tools that support developers in building high-quality ML prototypes and automatically documenting the prototyping process.</p>
+
       <div class="tool-card">
-        <h2>🧪 Tool 3</h2>
-        <p>Kurzbeschreibung des Tools.</p>
-        <a href="https://github.com/DEIN-USERNAME/tool3" target="_blank">Zum Repo</a>
+        <h3>Reviewer</h3>
+        <p>
+          Performs automated, stakeholder-oriented quality checks based on a quality model, a checklist, and stakeholder personas.
+          Ensures consistency and quality of ML prototype notebooks.
+        </p>
+        <p class="status implemented">Status: Under Construction 🛠️</p>
+      </div>
+
+      <div class="tool-card">
+        <h3>Recorder</h3>
+        <p>
+          Automatically records semantically meaningful steps during prototyping.
+          Supports time travel and branching through an <em>experiment tree</em> model, enabling exploration of alternative solution paths.
+        </p>
+        <p class="status implemented">Status: Implemented ✅</p>
+        <a href="https://anonymous.4open.science/r/HistreeBlinded-BE0F/README.md" target="_blank">View Repository</a>
+      </div>
+    </section>
+
+    <!-- Knowledge Management Bundle -->
+    <section class="bundle">
+      <h2>🧠 Bundle: Knowledge Management</h2>
+      <p>Tools to support searching, exploring, reusing, and retaining knowledge generated during ML solution prototyping.</p>
+
+      <div class="tool-card">
+        <h3>Explorer</h3>
+        <p>
+          Visualizes the evolution of an ML prototype as a tree, based on Recorder data.
+          Enables stakeholders to navigate, inspect, and branch previous versions of a prototype.
+        </p>
+        <p class="status implemented">Status: Implemented ✅</p>
+        <a href="https://anonymous.4open.science/r/HistreeBlinded-BE0F/README.md" target="_blank">View Repository</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Recommender</h3>
+        <p>
+          Suggests relevant notebooks or code cells based on similarity.
+          Uses a vector database and content-based retrieval to support code reuse during development.
+        </p>
+        <p class="status implemented">Status: Implemented ✅</p>
+        <a href="https://github.com/YOUR-USERNAME/recommender" target="_blank">View Repository</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Knowledge Manager</h3>
+        <p>
+          Allows developers to store, retain, and evaluate knowledge sources related to ML solution prototyping.
+          Provides automated assessments of source quality (e.g., reputation, benchmark usage, availability).
+        </p>
+        <p class="status design">Status: In design 🧭</p>
+  
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Proto-ML · <a href="https://github.com/DEIN-USERNAME">GitHub Profil</a></p>
+    <p>© 2025 Proto-ML · Based on the publication <em>“Tool-supported Development of ML Prototypes”</em></p>
   </footer>
 </body>
 </html>
