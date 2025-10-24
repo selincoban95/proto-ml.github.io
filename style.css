@@ -70,12 +70,10 @@ header p {
 }
 
 .paper-citation {
-  font-size: 0.85 rem;
+  font-size: 0.75 rem;
   color: #6b6f75; /* softer grey */
   margin-top: 0.6rem;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.4;
 }
 
