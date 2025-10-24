@@ -6,9 +6,15 @@ body {
 }
 
 header {
+  background-color: #1E3D59;  /* Dark blue color from the logo */
+  color: white;              /* White text for better contrast */
+  padding: 2rem;
   text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #0097e6, #00a8ff);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+header h1, header p {
   color: white;
 }
 
@@ -92,4 +98,16 @@ footer {
   padding: 1rem;
   background: #dcdde1;
   margin-top: 2rem;
+}
+
+.ide-overview {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.overview-image {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
