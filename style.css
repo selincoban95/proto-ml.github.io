@@ -59,18 +59,85 @@ header p {
 .bundle {
   max-width: 1100px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1.5rem; /* Increased padding for consistency */
+  background: white; /* Added background for better visibility */
+  border-radius: 12px; /* Consistent border radius */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .bundle h2 {
   font-size: 1.8rem;
-  margin: 2rem 0 1.5rem;
+  margin: 0 0 1rem; /* Adjusted margin for consistency */
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #1E3D59;
 }
 
+/* Tool Cards */
+.tool-card {
+  background: white;
+  padding: 1.5rem; /* Consistent padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.tool-card h3 {
+  margin-top: 0;
+  color: #1E3D59;
+  font-size: 1.4rem;
+}
+
+.tool-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem; /* Consistent button size */
+  background: #1E3D59;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.tool-card a:hover {
+  background: #2b5683;
+  transform: scale(1.05);
+}
+
+/* Status Labels */
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.status.implemented {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.status.development {
+  color: #f39c12;
+  background: rgba(243, 156, 18, 0.1);
+}
+
+.status.design {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+}
+
+/* Publications Section */
 .paper-citation {
-  font-size: 0.75 rem;
+  font-size: 0.75rem;
   color: #6b6f75; /* softer grey */
   margin-top: 0.6rem;
   max-width: 900px;
@@ -130,105 +197,6 @@ header p {
   color: #6b6f75;
 }
 
-.pub-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background: #4b6584;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 1;
-  padding: 0;
-  flex: 0 0 38px;
-}
-
-.pub-link:hover,
-.pub-link:focus {
-  background: #3c526d;
-  transform: translateY(-2px);
-  outline: none;
-}
-
-@media (max-width: 600px) {
-  .publication-item {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .pub-details {
-    font-size: 0.82rem;
-    max-width: calc(100% - 48px);
-  }
-}
-
-
-/* Tool Cards */
-.tool-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin: 1rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tool-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.tool-card h3 {
-  margin-top: 0;
-  color: #1E3D59;
-  font-size: 1.4rem;
-}
-
-.tool-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #1E3D59;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-.tool-card a:hover {
-  background: #2b5683;
-  transform: scale(1.05);
-}
-
-/* Status Labels */
-.status {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.status.implemented {
-  color: #2ecc71;
-  background: rgba(46, 204, 113, 0.1);
-}
-
-.status.development {
-  color: #f39c12;
-  background: rgba(243, 156, 18, 0.1);
-}
-
-.status.design {
-  color: #e74c3c;
-  background: rgba(231, 76, 60, 0.1);
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -245,10 +213,10 @@ footer {
   }
   
   .bundle {
-    padding: 1rem;
+    padding: 1.5rem; /* Consistent padding */
   }
   
   .tool-card {
-    padding: 1.2rem;
+    padding: 1.5rem; /* Consistent padding */
   }
 }
